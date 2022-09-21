@@ -4,3 +4,199 @@
     padding: 0;
 }
 
+:root{
+    --bg_nav_sx: #000000;
+    --bg_nav_top: #080B12;
+    --bg_primary: #141922;
+    --bg_player: #282828;
+    --clr_text: #76787D;
+    --clr_hover: #ADFF2F;
+    --clr_withe: #FFFFFF;
+}
+
+.flex{
+    display: flex;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.space_btw{
+    justify-content: space-between;
+}
+
+.flex_col{
+    flex-direction: column;
+}
+
+.tx_center{
+    text-align: center;
+}
+
+.mr_top_2r{
+    margin-top: 2rem;
+}
+
+.mr_top_1r{
+    margin-top: 1rem;
+}
+
+.mr_bt_1re{
+    margin-bottom: 1rem;
+}
+
+.pad_left_2r{
+    margin-left: 2rem;
+}
+
+
+
+/***********
+UTILITIES
+************/
+
+/*#region COL*/
+    .col_1{
+        width: calc(100% / 12 * 1);
+    }
+
+    .col_2{
+        width: calc(100% / 12 * 2);
+    }
+
+    .col_3{
+        width: calc(100% / 12 * 3);
+    }
+
+    .col_4{
+        width: calc(100% / 12 * 4);
+    }
+    
+    .col_5{
+        width: calc(100% / 12 * 5);
+    }
+
+    .col_6{
+        width: calc(100% / 12 * 6);
+    }
+
+    .col_7{
+        width: calc(100% / 12 * 7);
+    }
+
+    .col_8{
+        width: calc(100% / 12 * 8);
+    }
+
+    .col_9{
+        width: calc(100% / 12 * 9);
+    }
+
+    .col_10{
+        width: calc(100% / 12 * 10);
+    }
+
+    .col_11{
+        width: calc(100% / 12 *11);
+    }
+
+    .col_12{
+        width: calc(100% / 12 * 12);
+    }
+
+/*#endregion COL*/
+
+/*#region DEBUG*/
+    .debug .col_2{
+        height: 90vh;
+    }
+    .debug footer{
+        height: 10vh;
+        background-color: var(--bg_player);
+    }
+    .debug .col_10{
+        background-color: var(--bg_primary);
+    }
+
+
+/*#endregion DEBUG*/
+
+/***********
+MAIN
+************/
+
+/*#region SIDEBAR NAV*/
+    .sidebar{
+        background-color: var(--bg_nav_sx);
+    }
+
+    .sidebar .logo{
+        width: 60%;
+        margin-bottom: 2rem;
+    }
+
+    .sidebar .icons_nav{
+        width: 10%;
+    }
+
+    .tx_icons{
+        color:var(--clr_withe) ;
+        font-size: 1rem;
+        align-self: center;
+        margin-left: 1rem;
+    }
+
+    .tx_icons_op{
+        color:var(--clr_text) ;
+        font-size: 1rem;
+        align-self: center;
+        margin-left: 1rem;
+    }
+
+    .play_list{
+        color: var(--clr_withe);
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .playlist h2{
+        color:var(--clr_text) ;
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+
+    .playlist span{
+        color:var(--clr_text) ;
+        font-size: 1rem;
+        margin-top: 2rem;
+        margin-left: 1rem;
+    }
+
+    .playlist i{
+        background-color: var(--clr_text);
+        font-size: 1.5rem;
+        padding: 0.6rem;
+    }
+
+    .app {
+        color: var(--clr_withe);
+        color: var(--clr_text);
+        font-size: 1rem;
+    }
+
+    .app span{
+        margin-left: 0.5rem;
+    }
+
+    .app hr{
+        margin-right: 2rem;
+        margin-top: 1rem;
+        border-color: var(--clr_text);
+    }
+
+    .profile img{
+        background-color: #76787D;
+        border-radius: 50%;
+    }
+/*#endregion SIDEBAR NAV*/
