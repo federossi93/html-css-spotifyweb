@@ -115,10 +115,6 @@ UTILITIES
 
 /*#region DEBUG*/
 
-    .debug body{
-        height: 4000px;
-    }
-    
     .debug .col_2{
         height: 90vh;
     }
@@ -231,3 +227,21 @@ MAIN
 }
 
 /*#endregion NAV*/
+
+
+/*#region MENU'*/
+
+.menu{
+    margin-top: 100px;
+}
+
+.menu li{
+    display: inline-block;
+    padding: 0 1rem;
+}
+
+.menu li>a{
+    color: var(--clr_text);
+}
+
+/*#ENDregion MENU'*/
