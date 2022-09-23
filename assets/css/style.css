@@ -38,6 +38,10 @@
     flex-direction: column;
 }
 
+.flex_row{
+    flex-direction: row;
+}
+
 .tx_center{
     text-align: center;
 }
@@ -121,14 +125,7 @@ UTILITIES
 
 /*#endregion COL*/
 
-/*#region DEBUG*/
 
-    .debug footer{
-        height: 100px;
-        background-color: var(--bg_player);
-    }
-
-/*#endregion DEBUG*/
 
 /***********
 MAIN
@@ -224,9 +221,6 @@ MAIN
 .nav{
     background-color: var(--bg_nav_top);
     padding: 2rem;
-    /* position: fixed;
-    width: calc(100% - 200px);
-    z-index: 1000; */
 }
 
 .nav a{
@@ -304,6 +298,123 @@ MAIN
 }
 
 /*#endregion PLAYED*/
+
+/*#region mediaplayer*/
+.conteiner_player{
+    height: 100px;
+    background-color: var(--bg_player);
+}
+
+.items_left img{
+    width: 50px;
+    margin-left: 1rem;
+}
+
+.items_left{
+    align-self: center;
+}
+
+.brano h3{
+    margin-left: 1rem;
+    color: var(--clr_withe);
+}
+
+.brano h4{
+    margin-left: 1rem;
+    color: var(--clr_text);
+}
+
+.icons_left{
+    margin-left: 1rem;
+    color: var(--clr_text);
+    align-self: center
+}
+
+.icons_left> i{
+    margin-left: 0.5rem;
+}
+
+/*MID*/
+
+.items_mid i{
+    font-size: 1.5rem;
+    color: var(--clr_withe);
+    margin: 0 1rem;
+    margin-top: 0.5rem;
+    align-self: center;
+}
+
+.icon_mid{
+    justify-content: center;
+}
+
+#font_s{
+    font-size: 3rem;
+}
+
+.pleyer_bar{
+    display: inline-block;
+    width: 400px;
+    height: 3px;
+    background-color: var(--clr_text);
+    position: relative;
+}
+
+.pleyer_green{
+    display: inline-block;
+    width: 80px;
+    height: 3px;
+    background-color: var(--clr_hover);
+    position: absolute;
+    left: 0;
+}
+
+.pleyer_mid{
+    padding-top: 0.5rem;
+}
+
+.pleyer_mid span{
+    color: var(--clr_withe);
+    margin: 0 1rem;
+}
+
+/*RIGHT*/
+
+.icons_right{
+    margin-right: 1rem;
+    color: var(--clr_withe);
+    align-self: center
+}
+
+.icons_right{
+    margin-right: 0.5rem;
+    color: var(--clr_withe);
+    align-self: center
+}
+
+.icons_right> i{
+    margin-right: 1rem;
+}
+
+.sound_bar{
+    position: relative;
+    display: inline-block;
+    align-self: center;
+    width: 80px;
+    height: 3px;
+    background-color: var(--clr_text);
+}
+
+.sound_b{
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background-color: var(--clr_withe);
+    left: 0;
+}
+
+/*#endregion mediaplayer*/
 
 /*#region MEDIA*/
 @media screen and (max-width:1920px){
