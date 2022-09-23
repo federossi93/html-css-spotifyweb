@@ -18,10 +18,6 @@
     overflow-y: auto;
 }
 
-.container{
-    height: calc(100vh - 100px);
-}
-
 .flex{
     display: flex;
 }
@@ -80,7 +76,7 @@ UTILITIES
     }
 
     .col_2{
-        width: calc(100% / 12 * 2);
+        width: calc(100% / 12 * 2 - 1rem);
     }
 
     .col_3{
@@ -127,16 +123,10 @@ UTILITIES
 
 /*#region DEBUG*/
 
-
-
     .debug footer{
         height: 100px;
         background-color: var(--bg_player);
     }
-    .debug .col_10{
-        background-color: var(--bg_primary);
-    }
-
 
 /*#endregion DEBUG*/
 
@@ -147,11 +137,16 @@ MAIN
 /*#region SIDEBAR*/
     .sidebar{
         background-color: var(--bg_nav_sx);
+        width: 250px;
     }
 
     .sidebar .logo{
         width: 60%;
         margin-bottom: 2rem;
+    }
+
+    .sidebar .logo_sml{
+        display: none;
     }
 
     .sidebar .icons_nav{
@@ -198,7 +193,6 @@ MAIN
     }
 
     .app {
-        color: var(--clr_withe);
         color: var(--clr_text);
         font-size: 1rem;
     }
@@ -221,12 +215,18 @@ MAIN
 
 /*#region NAV*/
 
+.container{
+    height: calc(100vh - 100px);
+    width: calc(100vw);
+    background-color: var(--bg_primary);
+}
+
 .nav{
     background-color: var(--bg_nav_top);
     padding: 2rem;
-    position: fixed;
-    width: calc(100% / 12 * 10);
-    z-index: 1000;
+    /* position: fixed;
+    width: calc(100% - 200px);
+    z-index: 1000; */
 }
 
 .nav a{
@@ -258,6 +258,11 @@ MAIN
 
 
 /*#region PLAYED*/
+
+.row{
+    flex-wrap: wrap;
+    gap: 1rem;
+}
 
 .played{
     color: var(--clr_withe);
@@ -291,3 +296,64 @@ MAIN
 }
 
 /*#endregion PLAYED*/
+
+/*#region MEDIA*/
+@media screen and (max-width:1920px){
+    
+}
+
+
+@media screen and (max-width: 878px) {
+    .col_md_2 {
+        width: calc((100% / 12) * 3 - 1rem);
+    }
+
+    .sidebar{
+        width: 250px;
+    }
+
+    .menu li{
+        margin-bottom:2rem ;
+    }
+}
+
+
+@media screen and (max-width: 639px) {
+    .col_sl_2 {
+        width: calc((100% / 12) * 6 - 1rem);
+    }
+}
+
+
+@media screen and (max-width: 552px) {
+    
+    .sidebar{
+        width: 100px;
+    }
+
+    .sidebar .logo{
+        display: none;
+    }
+
+    .sidebar .logo_sml{
+        width: 40%;
+        display: block;
+        margin-bottom: 2rem;
+    }
+
+    .sidebar .icons_nav{
+        width: 40%;
+    }
+
+    .tx_icons,
+    .tx_icons_op, 
+    .play_list, 
+    .playlist,
+    hr,
+    .app span{
+        display: none;
+    }
+    
+}
+
+/*#endregion MEDIA*/
