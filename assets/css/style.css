@@ -150,6 +150,12 @@ MAIN
         width: 10%;
     }
 
+    .border_color{
+        border-left: 2px solid var(--clr_hover);
+        padding-left: 1rem;
+        margin-left: -1rem;
+    }
+
     .tx_icons{
         color:var(--clr_withe) ;
         font-size: 1rem;
@@ -174,6 +180,16 @@ MAIN
         color:var(--clr_text) ;
         font-size: 1rem;
         margin-top: 1rem;
+    }
+
+    .playlist h2:hover{
+        color: var(--clr_withe);
+        cursor: pointer;
+    }
+
+    .playlist span:hover{
+        color: var(--clr_withe);
+        cursor: pointer;
     }
 
     .playlist span{
@@ -244,6 +260,10 @@ MAIN
     padding: 0 1rem;
 }
 
+.menu  a:hover{
+    color: var(--clr_withe);
+}
+
 .menu li>a{
     color: var(--clr_text);
 }
@@ -276,6 +296,28 @@ MAIN
 .card{
     padding: 0.5rem;
     text-align: center;
+}
+
+.img_h{
+    position: relative;
+}
+
+.img_h>i{
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--clr_withe);
+    display: none;
+}
+
+.card:hover img{
+    filter: blur(2px);
+}
+
+.card:hover i{
+    display: block;
 }
 
 .card img{
