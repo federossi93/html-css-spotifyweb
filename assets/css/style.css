@@ -267,25 +267,33 @@ MAIN
 .played{
     color: var(--clr_withe);
     font-size: 2rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
     margin-top: 4rem;
     margin-bottom: 2rem;
 }
 
-.card{
-    display: inline-block;
-    padding: 0.5rem;
+.tips{
+    color: var(--clr_text);
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
 }
 
-#special{
-    text-align: left;
-    
+.card{
+    padding: 0.5rem;
+    text-align: center;
 }
+
 .card img{
     width: 100%;
 }
+
+.img_radius{
+    border-radius: 50%;
+}
+
 .card h2{
-    text-align: center;
+    margin-top: 0.5rem;
     color: var(--clr_withe);
 }
 
@@ -314,6 +322,10 @@ MAIN
 
     .menu li{
         margin-bottom:2rem ;
+    }
+
+    .font_tx{
+        font-size: 1rem;
     }
 }
 
